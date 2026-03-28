@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PawKit — Your Access Details</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 60px 40px;
+  }
+
+  .card {
+    width: 560px;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+  .logo__text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1c0a00;
+    letter-spacing: -0.5px;
+  }
+
+  .thank-you {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1c0a00;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 48px;
+    line-height: 1.5;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  .step__num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f59e0b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step__body {}
+  .step__label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+  }
+  .step__value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c0a00;
+  }
+  .step__value a {
+    color: #d97706;
+    text-decoration: none;
+  }
+
+  .code-box {
+    background: #fffbeb;
+    border: 2px dashed #fcd34d;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 6px;
+  }
+  .code-box__code {
+    font-size: 26px;
+    font-weight: 700;
+    color: #d97706;
+    letter-spacing: 3px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 40px 0;
+  }
+
+  .note {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+  .note strong {
+    color: #6b7280;
+  }
+
+  @media print {
+    body { padding: 0; min-height: unset; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="10" fill="#f59e0b"/>
+        <circle cx="13" cy="11" r="3" fill="white"/>
+        <circle cx="23" cy="11" r="3" fill="white"/>
+        <circle cx="9" cy="17" r="2.5" fill="white"/>
+        <circle cx="27" cy="17" r="2.5" fill="white"/>
+        <path d="M18 14C13 14 9 18 9.5 22.5C10 26 13.5 28 18 28C22.5 28 26 26 26.5 22.5C27 18 23 14 18 14Z" fill="white"/>
+      </svg>
+      <span class="logo__text">PawKit</span>
+    </div>
+
+    <p class="thank-you">You're all set!</p>
+    <p class="subtitle">Follow the two steps below to access your PawKit editor<br>and create your first pet care pack in minutes.</p>
+
+    <div class="step">
+      <div class="step__num">1</div>
+      <div class="step__body">
+        <div class="step__label">Open the app</div>
+        <div class="step__value"><a href="https://pawkit.vercel.app">pawkit.vercel.app</a></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step__num">2</div>
+      <div class="step__body">
+        <div class="step__label">Enter your access code</div>
+        <div class="code-box">
+          <div class="code-box__code">PAWK-K7N2-X9QT</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <p class="note">
+      <strong>Works in any browser</strong> — Chrome, Safari, Firefox, Edge.<br>
+      Your data is saved automatically in your browser.<br>
+      Need help? Reply to your Etsy order and we'll sort it out.
+    </p>
+
+  </div>
+</body>
+</html>
